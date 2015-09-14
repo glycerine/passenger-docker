@@ -1,5 +1,5 @@
-NAME = phusion/passenger
-VERSION = 0.9.17
+NAME = jaten/nsq-rpc
+VERSION = 0.1.1
 
 .PHONY: all build_all \
 	build_customizable \
@@ -123,11 +123,11 @@ clean:
 	rm -rf full_image
 
 clean_images:
-	docker rmi phusion/passenger-customizable:latest phusion/passenger-customizable:$(VERSION) || true
-	docker rmi phusion/passenger-ruby19:latest phusion/passenger-ruby19:$(VERSION) || true
-	docker rmi phusion/passenger-ruby20:latest phusion/passenger-ruby20:$(VERSION) || true
-	docker rmi phusion/passenger-ruby21:latest phusion/passenger-ruby21:$(VERSION) || true
-	docker rmi phusion/passenger-ruby22:latest phusion/passenger-ruby22:$(VERSION) || true
-	docker rmi phusion/passenger-jruby90:latest phusion/passenger-jruby90:$(VERSION) || true
-	docker rmi phusion/passenger-nodejs:latest phusion/passenger-nodejs:$(VERSION) || true
-	docker rmi phusion/passenger-full:latest phusion/passenger-full:$(VERSION) || true
+	docker rmi glycerine/passenger-customizable:latest glycerine/passenger-customizable:$(VERSION) || true
+	docker rmi glycerine/passenger-ruby19:latest glycerine/passenger-ruby19:$(VERSION) || true
+	docker rmi glycerine/passenger-ruby20:latest glycerine/passenger-ruby20:$(VERSION) || true
+	docker rmi glycerine/passenger-ruby21:latest glycerine/passenger-ruby21:$(VERSION) || true
+	docker rmi glycerine/passenger-ruby22:latest glycerine/passenger-ruby22:$(VERSION) || true
+	docker rmi glycerine/passenger-jruby90:latest glycerine/passenger-jruby90:$(VERSION) || true
+	docker rmi glycerine/passenger-nodejs:latest glycerine/passenger-nodejs:$(VERSION) || true
+	docker rmi glycerine/passenger-full:latest glycerine/passenger-full:$(VERSION) || true
